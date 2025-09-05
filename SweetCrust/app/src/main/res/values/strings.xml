@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">SweetCrust</string>
+    <string name="Description">
+    Satisfy Your Cravings with Our\nFreshCakes, Donuts\nand Pastries
+    </string>
+
+    <!--Launch screen-->
+    <string name="intro_sub">Browse the best edibles from top seller\nGet personalized recommendations\nEnjoy fat,free shipping</string>
+    <string name="intro_signin">Already have an account? </string>
+    <string name="signin">Sign in</string>
+
+    <!--Home screen-->
+    <string name="Home_category">Categories</string>
+    <string name="Home_seeall">See all</string>
+    <string name="Home_explorer">Explorer</string>
+    <string name="Home_cart">Cart</string>
+    <string name="Home_Wishlist">Wishlist</string>
+    <string name="Home_MyOrder">My Order</string>
+    <string name="Home_profile">Profile</string>
+    <string name="cakebtn">Cakes</string>
+    <string name="cupcakebtn">Cup Cakes</string>
+    <string name="cookiesbtn">Cookies</string>
+    <string name="Donutsbtn">Donuts</string>
+    <string name="best1">Rs.3500.00\nStrawberry Chocolate\nCake</string>
+    <string name="best2">Rs.4750.00\nTiramisu Cake\n</string>
+    <string name="best3">Rs.1250.00\nChocolate Brownies\n</string>
+    <string name="best4">Rs.800.00\nRed Velvet Cookies\n</string>
+    <string name="best5">Rs.4000.00\nBlueberry Cheese\nCake\n</string>
+    <string name="best6">Rs.300.00\nStrawberry Donuts\n</string>
+
+    <!--Product screen-->
+    <string name="product_cakename">Strawberry Chocolate Cake</string>
+    <string name="productprice">Rs.3500.00</string>
+    <string name="product_seller">Seller</string>
+    <string name="product_sellername">WildCookBook</string>
+    <string name="Product_weight">Select Weight</string>
+    <string name="product_w1">1Kg</string>
+    <string name="product_w2">2Kg</string>
+    <string name="product_w3">3Kg</string>
+    <string name="product_w4">4Kg</string>
+    <string name="product_cakedescription">A strawberry chocolate cake is a moist chocolate sponge layered with sweet strawberry flavors.\n
+        It combines the richness of chocolate with the freshness of strawberries.\n
+        Finished with strawberries on top,\n
+        it’s both decadent and refreshing.</string>
+    <string name="prouduct_cartbtn">Add to Cart</string>
+
+    <!--Cart screen-->
+    <string name="carttitle">My Cart</string>
+    <string name="cart_tprice1">Rs.7000.00</string>
+    <string name="cart_plus">+</string>
+    <string name="cart_minus">-</string>
+    <string name="product_cakename2">Fruit Cup Cake</string>
+    <string name="productprice1">Rs.500.00</string>
+    <string name="cart_tprice2">Rs.2000.00</string>
+    <string name="product_cakename3">Ginger Bread Cookies</string>
+    <string name="productprice3">Rs.120.00</string>
+    <string name="cart_tprice3">Rs.2400.00</string>
+    <string name="product_cakename4">Blueberry Cheese Cake</string>
+    <string name="productprice4">Rs.4000.00</string>
+    <string name="cart_discount">Enter Your Discount Code</string>
+    <string name="cart_disbtn">Apply</string>
+    <string name="cart_total">Subtotal\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRs.15,400.00\nDelivery Fee\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRs.500.00\nTotal Tax\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRs.800.00</string>
+    <string name="cart_totalpriceall">Total\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tRs.16,700.00</string>
+    <string name="cart_proceedbtn">Proceed to Checkout</string>
+
+    <!--login screen-->
+    <string name="login_welcome">Welcome\nto\nSweet World!</string>
+    <string name="login_login">Log In</string>
+    <string name="login_name">Username or Email</string>
+    <string name="login_Pw">Password</string>
+    <string name="login_signup">Sign Up</string>
+    <string name="login_or">Or</string>
+    <string name="login_pp">Privacy policy</string>
+
+    <!--signup screen-->
+    <string name="signup_header">Signup \nfor a \nDelicious Journey</string>
+    <string name="signup_form1">Full Name</string>
+    <string name="signup_form2">Email</string>
+    <string name="signup_form4">Confirm Password</string>
+
+
+    <!--onboarding screen-->
+    <string name="onboarding1">Savour Every Sweet \nMoment!\n</string>
+    <string name="onboarding2">Fresh</string>
+    <string name="onboarding3">Begin Your Sweet Journey!</string>
+    <string name="onboarding4">Sweet</string>
+    <string name="onboarding5">Tasty</string>
+
+
+    <!--cakes page screen-->
+    <string name="cakelist_cake1">Chocolate cake filled \nwith Srawberries.</string>
+    <string name="cakelist_addcartbtn">+ Add to Cart</string>
+    <string name="cakelist_cake2name">Tiramisu\n</string>
+    <string name="cakelist_cake2des">Tiramisu is an Italian dessert \nmade of ladyfinger pastries.</string>
+    <string name="product_cakelistname3">Lemon Raspberry\nCake</string>
+    <string name="cakelist3des">Lemon filled cake \nwith raspberries</string>
+    <string name="cakelist_price2">Rs.4750.00</string>
+    <string name="cakelist_price3">Rs.5000.00</string>
+    <string name="cakelist_cake4name">Blueberry Cheese \nCake</string>
+    <string name="cakelist_cake4des">Cheesecake filled with\nblueberries</string>
+
+    <!--profile screen-->
+    <string name="profile_Profile">Profile</string>
+    <string name="Name_profile">Enuri Illesinghe</string>
+    <string name="profile_about">Searching through variety of \nSweetness</string>
+    <string name="profile_contact">Contact Details</string>
+    <string name="phonenum">+94 715675538</string>
+    <string name="phonenum1">Mobile</string>
+    <string name="email_profile">enuri12@gmail.com</string>
+    <string name="email_profile1">E-mail</string>
+    <string name="profile_orderhistory"> Order History  </string>
+    <string name="profile_favourites">Saved Favourites</string>
+    <string name="profile_settings">Settings</string>
+
+    <!--home screen-->
+    <string name="home_welcome">Welcome!</string>
+    <string name="home_notification">2</string>
+    <string name="home_search">Search anything..</string>
+    <string name="home_best_seller_products">Best Seller Products</string>
+    <string name="nav_explore">Explore</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_wishlist">Wishlist</string>
+    <string name="nav_orders">Orders</string>
+    <string name="nav_profile">Profile</string>
+    <string name="Browniebtn">Brownies</string>
+    <string name="Profile_OrderHistory">OrderHistory</string>
+    <string name="best2name">Tiramisu Cake</string>
+</resources>

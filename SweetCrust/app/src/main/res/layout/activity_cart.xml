@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="418dp"
+            android:layout_height="108dp"
+            android:background="@drawable/brown_bg_bottom_corner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/backbtncart"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="28dp"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/backarrow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.021"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/CircleImage" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:text="@string/carttitle"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="407dp"
+            android:layout_height="769dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <LinearLayout
+                android:layout_width="404dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cartitem1"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/categorybtn_bg"
+                    app:srcCompat="@drawable/best1"
+                    tools:layout_marginStart="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:text="@string/product_cakename"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginTop="6sp"
+                        android:text="@string/productprice"
+                        android:textColor="@color/brown" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:layout_marginTop="16sp"
+                            android:text="@string/cart_tprice1"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="30sp"
+                            android:layout_marginEnd="2dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/buttonminus"
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:cornerRadius="25dp"
+                                app:srcCompat="@drawable/minus" />
+
+
+                            <EditText
+                                android:id="@+id/editTextText2"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="@color/brown"
+                                android:inputType="number"
+                                android:text="2"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+
+                            <ImageView
+                                android:id="@+id/button10"
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:cornerRadius="25dp"
+                                app:srcCompat="@drawable/plus" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="404dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                tools:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/cartcake2"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/categorybtn_bg"
+                    app:srcCompat="@drawable/cartitem2"
+                    tools:layout_marginStart="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cartname2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:text="@string/product_cakename2"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cartprice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginTop="6sp"
+                        android:text="@string/productprice1"
+                        android:textColor="@color/brown" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/carttotalprice2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:layout_marginTop="16sp"
+                            android:text="@string/cart_tprice2"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="30sp"
+                            android:layout_marginEnd="2dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/minusbtn2"
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:cornerRadius="25dp"
+                                app:srcCompat="@drawable/minus" />
+
+
+                            <EditText
+                                android:id="@+id/cartitem2"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="@color/brown"
+                                android:inputType="number"
+                                android:text="4"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+
+                            <ImageView
+                                android:id="@+id/plusbtn2"
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:cornerRadius="25dp"
+                                app:srcCompat="@drawable/plus" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="404dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                tools:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/cartitem3"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/categorybtn_bg"
+                    app:srcCompat="@drawable/cartitem3"
+                    tools:layout_marginStart="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/itemname3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:text="@string/product_cakename3"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cartprice3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginTop="6sp"
+                        android:text="@string/productprice3"
+                        android:textColor="@color/brown" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/carttotalprice3"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:layout_marginTop="16sp"
+                            android:text="@string/cart_tprice3"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="30sp"
+                            android:layout_marginEnd="2dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/buttonminus3"
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:cornerRadius="25dp"
+                                app:srcCompat="@drawable/minus" />
+
+
+                            <EditText
+                                android:id="@+id/count3"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="@color/brown"
+                                android:inputType="number"
+                                android:text="20"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+
+                            <ImageView
+                                android:id="@+id/plusbtn3"
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:cornerRadius="25dp"
+                                app:srcCompat="@drawable/plus" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="404dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cartitem4"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/categorybtn_bg"
+                    app:srcCompat="@drawable/cartitem4"
+                    tools:layout_marginStart="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cartitemname4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:text="@string/product_cakename4"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cartprice4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20sp"
+                        android:layout_marginTop="6sp"
+                        android:text="@string/productprice4"
+                        android:textColor="@color/brown" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/carttotalprice4"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20sp"
+                            android:layout_marginTop="16sp"
+                            android:text="@string/productprice4"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="43dp"
+                            android:layout_marginStart="30sp"
+                            android:layout_marginEnd="2dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:id="@+id/buttonminus4"
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:cornerRadius="25dp"
+                                app:srcCompat="@drawable/minus" />
+
+
+                            <EditText
+                                android:id="@+id/count4"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="@color/brown"
+                                android:inputType="number"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textSize="16sp" />
+
+
+                            <ImageView
+                                android:id="@+id/plusbtn4"
+                                android:layout_width="38dp"
+                                android:layout_height="38dp"
+                                app:cornerRadius="25dp"
+                                app:srcCompat="@drawable/plus" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:orientation="horizontal"
+                tools:layout_marginEnd="8dp">
+
+                <EditText
+                    android:id="@+id/editTextText3"
+                    android:layout_width="280dp"
+                    android:layout_height="51dp"
+                    android:background="@color/categorybtn_bg"
+                    android:backgroundTint="@color/categorybtn_bg"
+                    android:ems="10"
+                    android:hint="@string/cart_discount"
+                    android:inputType="text"
+                    android:textAlignment="textStart"
+                    tools:layout_marginBottom="20dp" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/brown"
+                    android:text="@string/cart_disbtn"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="@string/cart_total" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/cart_totalpriceall"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/brown"
+                android:text="@string/cart_proceedbtn"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

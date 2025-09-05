@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout5"
+                android:layout_width="413dp"
+                android:layout_height="125dp"
+                android:background="@drawable/brown_bg_bottom_corner">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:text="@string/Profile_OrderHistory"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.461"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="#ECECEC"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/categorybtn_bg"
+                    android:padding="12dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgProduct1"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_img_rounded"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/best2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvTitle1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/best2name"
+                        android:textColor="#1C1C1C"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgProduct1"
+                        app:layout_constraintTop_toTopOf="@id/imgProduct1" />
+
+
+                    <TextView
+                        android:id="@+id/tvQty1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity: 2"
+                        android:textColor="#6F6F6F"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@id/tvTitle1"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle1" />
+
+
+                    <TextView
+                        android:id="@+id/tvDate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Oct 26, 2023"
+                        android:textColor="#9A9A9A"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgProduct1" />
+
+
+                    <TextView
+                        android:id="@+id/tvPrice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.4000.00"
+                        android:textColor="#1C1C1C"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvDate1"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvStatus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_chip_delivered"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Delivered"
+                        android:textColor="#C25B5B"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvDate1" />
+
+
+                    <TextView
+                        android:id="@+id/btnReorder1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_btn_outline_pink"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="Reorder"
+                        android:textColor="@color/Red"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus1"
+                        app:layout_constraintStart_toEndOf="@id/tvStatus1" />
+
+
+                    <TextView
+                        android:id="@+id/btnDetails1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_btn_outline_gray"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="View Details"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus1"
+                        app:layout_constraintStart_toEndOf="@id/btnReorder1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="#ECECEC"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/categorybtn_bg"
+                    android:padding="12dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgProduct2"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_img_rounded"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cakepic2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvTitle2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/best2name"
+                        android:textColor="#1C1C1C"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgProduct2"
+                        app:layout_constraintTop_toTopOf="@id/imgProduct2" />
+
+
+                    <TextView
+                        android:id="@+id/tvQty2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity: 2"
+                        android:textColor="#6F6F6F"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@id/tvTitle2"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle2" />
+
+
+                    <TextView
+                        android:id="@+id/tvDate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Oct 26, 2023"
+                        android:textColor="#9A9A9A"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgProduct2" />
+
+
+                    <TextView
+                        android:id="@+id/tvPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.4000.00"
+                        android:textColor="#1C1C1C"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvDate2"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvStatus2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_chip_delivered"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Delivered"
+                        android:textColor="#C25B5B"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvDate2" />
+
+
+                    <TextView
+                        android:id="@+id/btnReorder2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_btn_outline_pink"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="Reorder"
+                        android:textColor="@color/Red"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus2"
+                        app:layout_constraintStart_toEndOf="@id/tvStatus2" />
+
+
+                    <TextView
+                        android:id="@+id/btnDetails2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_btn_outline_gray"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="View Details"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus2"
+                        app:layout_constraintStart_toEndOf="@id/btnReorder2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="#ECECEC"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/categorybtn_bg"
+                    android:padding="12dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgProduct3"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_img_rounded"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cakepic1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvTitle3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/best2name"
+                        android:textColor="#1C1C1C"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgProduct3"
+                        app:layout_constraintTop_toTopOf="@id/imgProduct3" />
+
+
+                    <TextView
+                        android:id="@+id/tvQty3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity: 2"
+                        android:textColor="#6F6F6F"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@id/tvTitle3"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle3" />
+
+
+                    <TextView
+                        android:id="@+id/tvDate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Oct 26, 2023"
+                        android:textColor="#9A9A9A"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgProduct3" />
+
+
+                    <TextView
+                        android:id="@+id/tvPrice3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.4000.00"
+                        android:textColor="#1C1C1C"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvDate3"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvStatus3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_chip_delivered"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Delivered"
+                        android:textColor="#C25B5B"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvDate3" />
+
+
+                    <TextView
+                        android:id="@+id/btnReorder3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_btn_outline_pink"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="Reorder"
+                        android:textColor="@color/Red"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus3"
+                        app:layout_constraintStart_toEndOf="@id/tvStatus3" />
+
+
+                    <TextView
+                        android:id="@+id/btnDetails3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_btn_outline_gray"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="View Details"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus3"
+                        app:layout_constraintStart_toEndOf="@id/btnReorder3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="#ECECEC"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/categorybtn_bg"
+                    android:padding="12dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgProduct4"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_img_rounded"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cartitem3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvTitle4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/best2name"
+                        android:textColor="#1C1C1C"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgProduct4"
+                        app:layout_constraintTop_toTopOf="@id/imgProduct4" />
+
+
+                    <TextView
+                        android:id="@+id/tvQty4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity: 2"
+                        android:textColor="#6F6F6F"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@id/tvTitle4"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle4" />
+
+
+                    <TextView
+                        android:id="@+id/tvDate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Oct 26, 2023"
+                        android:textColor="#9A9A9A"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgProduct4" />
+
+
+                    <TextView
+                        android:id="@+id/tvPrice4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.4000.00"
+                        android:textColor="#1C1C1C"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvDate4"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvStatus4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_chip_delivered"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Delivered"
+                        android:textColor="#C25B5B"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvDate4" />
+
+
+                    <TextView
+                        android:id="@+id/btnReorder4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_btn_outline_pink"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="Reorder"
+                        android:textColor="@color/Red"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus4"
+                        app:layout_constraintStart_toEndOf="@id/tvStatus4" />
+
+
+                    <TextView
+                        android:id="@+id/btnDetails4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_btn_outline_gray"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="View Details"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus4"
+                        app:layout_constraintStart_toEndOf="@id/btnReorder4" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="#ECECEC"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/categorybtn_bg"
+                    android:padding="12dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgProduct5"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_img_rounded"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cakepic3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvTitle5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/best2name"
+                        android:textColor="#1C1C1C"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgProduct5"
+                        app:layout_constraintTop_toTopOf="@id/imgProduct5" />
+
+
+                    <TextView
+                        android:id="@+id/tvQty5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity: 2"
+                        android:textColor="#6F6F6F"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@id/tvTitle5"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle5" />
+
+
+                    <TextView
+                        android:id="@+id/tvDate5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Oct 26, 2023"
+                        android:textColor="#9A9A9A"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgProduct5" />
+
+
+                    <TextView
+                        android:id="@+id/tvPrice5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.4000.00"
+                        android:textColor="#1C1C1C"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvDate5"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvStatus5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_chip_delivered"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Delivered"
+                        android:textColor="#C25B5B"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvDate5" />
+
+
+                    <TextView
+                        android:id="@+id/btnReorder5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_btn_outline_pink"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="Reorder"
+                        android:textColor="@color/Red"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus5"
+                        app:layout_constraintStart_toEndOf="@id/tvStatus5" />
+
+
+                    <TextView
+                        android:id="@+id/btnDetails5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_btn_outline_gray"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="View Details"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus5"
+                        app:layout_constraintStart_toEndOf="@id/btnReorder5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="#ECECEC"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/categorybtn_bg"
+                    android:padding="12dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgProduct6"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_img_rounded"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cakepic4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvTitle6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/best2name"
+                        android:textColor="#1C1C1C"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgProduct6"
+                        app:layout_constraintTop_toTopOf="@id/imgProduct6" />
+
+
+                    <TextView
+                        android:id="@+id/tvQty6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity: 2"
+                        android:textColor="#6F6F6F"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@id/tvTitle6"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle6" />
+
+
+                    <TextView
+                        android:id="@+id/tvDate6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Oct 26, 2023"
+                        android:textColor="#9A9A9A"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgProduct6" />
+
+
+                    <TextView
+                        android:id="@+id/tvPrice6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.4000.00"
+                        android:textColor="#1C1C1C"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvDate6"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvStatus6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_chip_delivered"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Delivered"
+                        android:textColor="#C25B5B"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvDate6" />
+
+
+                    <TextView
+                        android:id="@+id/btnReorder6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_btn_outline_pink"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="Reorder"
+                        android:textColor="@color/Red"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus6"
+                        app:layout_constraintStart_toEndOf="@id/tvStatus6" />
+
+
+                    <TextView
+                        android:id="@+id/btnDetails6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_btn_outline_gray"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="View Details"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus6"
+                        app:layout_constraintStart_toEndOf="@id/btnReorder6" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true"
+                app:strokeColor="#ECECEC"
+                app:strokeWidth="1dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/categorybtn_bg"
+                    android:padding="12dp">
+
+
+                    <ImageView
+                        android:id="@+id/imgProduct7"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:background="@drawable/bg_img_rounded"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/redcookies"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvTitle7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/best2name"
+                        android:textColor="#1C1C1C"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/imgProduct7"
+                        app:layout_constraintTop_toTopOf="@id/imgProduct7" />
+
+
+                    <TextView
+                        android:id="@+id/tvQty7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity: 2"
+                        android:textColor="#6F6F6F"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="@id/tvTitle7"
+                        app:layout_constraintTop_toBottomOf="@id/tvTitle7" />
+
+
+                    <TextView
+                        android:id="@+id/tvDate7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Oct 26, 2023"
+                        android:textColor="#9A9A9A"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgProduct7" />
+
+
+                    <TextView
+                        android:id="@+id/tvPrice7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.4000.00"
+                        android:textColor="#1C1C1C"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvDate7"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/tvStatus7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_chip_delivered"
+                        android:gravity="center"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:text="Delivered"
+                        android:textColor="#C25B5B"
+                        android:textSize="11sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvDate7" />
+
+
+                    <TextView
+                        android:id="@+id/btnReorder7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="12dp"
+                        android:background="@drawable/bg_btn_outline_pink"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="Reorder"
+                        android:textColor="@color/Red"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus7"
+                        app:layout_constraintStart_toEndOf="@id/tvStatus7" />
+
+
+                    <TextView
+                        android:id="@+id/btnDetails7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_btn_outline_gray"
+                        android:gravity="center"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="View Details"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintBaseline_toBaselineOf="@id/tvStatus7"
+                        app:layout_constraintStart_toEndOf="@id/btnReorder7" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="402dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/brown_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nav_explore"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:srcCompat="@drawable/explore" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Explore"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nav_cart"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:srcCompat="@drawable/cart" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Cart"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!-- Wishlist -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nav_wishlist"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:srcCompat="@drawable/fav_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Wishlist"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!-- Orders -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nav_orders"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:srcCompat="@drawable/orders" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Orders"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!-- Profile -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nav_profile"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    app:srcCompat="@drawable/profile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Profile"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
